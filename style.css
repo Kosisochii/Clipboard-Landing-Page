@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* background-color: gainsboro; */
+}
+
+header {
+    background: url("images/bg-header-mobile.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    padding: 100px 0 40px 0;
+}
+
+section {
+    text-align: center;
+    padding: 15px;
+}
+
+section h1 {
+    font-size: 35px;
+    color: hsl(0, 0%, 24%);
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 25px;
+    color: rgb(128, 128, 126);
+}
+
+button {
+    margin-top: 35px;
+    padding: 20px 0px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btnContainer button:first-child {
+      background-color: hsl(171, 66%, 44%);
+}
+
+.btnContainer button:last-child {
+    background-color: hsl(233, 100%, 69%);
+}
+
+main, .clipboardContainer {
+    padding: 10px;
+    text-align: center;
+    margin-top: 108px;
+}
+
+main h3 {
+    padding: 50px 0 15px 0;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.imgContainer img {
+    width: 100%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+main p {
+    color: rgb(128, 134, 134);
+    line-height: 25px;
+}
+
+.iconContainer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconContainer img {
+    width: 50px;
+}
+
+.companyLogoContainer {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+footer {
+    margin: 120px 0 0;
+    padding: 30px;
+    background-color: hsl(210, 6%, 93%);
+    text-align: center;
+}
+
+footer img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul li ,
+.fa-brands{
+    cursor: pointer;
+}
+
+ul li:last-child {
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+      button {
+        width: 350px;
+      }
+
+
+      .btnContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      main {
+        margin: 70px 0 0;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .computerContainer {
+        margin-top: 40px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        }
+
+        .firstRightFlex {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .imgContainer img {
+            width: 800px;
+        }
+
+        .iconBigContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            text-align: center;
+        }
+
+        .icons {
+            inline-size: 700px;
+        }
+
+        .icons h3 {
+            margin: 0 0 10px;
+            padding: 0;
+        }
+
+        .iconContainer {
+            margin-bottom: 15px;
+        }
+
+        .companyLogoContainer {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 150px;
+        }
+
+        .iosSecondContainer {
+            margin-top: 60px;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            align-items: self-start;
+            row-gap: 50px;
+            column-gap: 102px;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .fa-brands {
+            font-size: 30px;
+        }
+}
